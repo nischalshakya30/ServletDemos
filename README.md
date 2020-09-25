@@ -1,5 +1,5 @@
 ## Servlet Basics 
-This project contains two servlet class one sevlet is configured in web.xml and another servlet is configured using **@WebServlet** annotation which is aviable from Servlet API 3.0.
+This project contains two servlet class one servlet is configured in web.xml and another servlet is configured using **@WebServlet** annotation which is available from Servlet API 3.0.
 
 ### Prerequisite
 * Java 8 or higher 
@@ -14,7 +14,7 @@ This project contains two servlet class one sevlet is configured in web.xml and 
 
 * Open the IDE
 
-* Go the the File / Open the project 
+* Go the File / Open the project 
 
 * Setup up the apache tomcat server 
   
