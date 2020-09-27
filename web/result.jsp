@@ -1,6 +1,6 @@
 <%-- 
-    Document   : scriplet
-    Created on : Sep 27, 2020, 9:13:53 AM
+    Document   : result
+    Created on : Sep 27, 2020, 9:40:14 AM
     Author     : msii
 --%>
 
@@ -12,12 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>This is scriptlet tag demo</h1>
+        <h1>Hello World!</h1>
         <%
-            int a = 10;
-            int b = 10;
-            int sum = a + b;
-            out.println(sum);
+            out.println(request.getAttribute("sum"));
         %>
     </body>
 </html>
