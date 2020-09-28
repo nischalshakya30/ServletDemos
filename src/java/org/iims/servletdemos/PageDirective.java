@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author msii
  */
-@WebServlet(name = "PageDirective", urlPatterns = {"/page-directive"})
+@WebServlet(name = "PageDirective", urlPatterns = {"/forward-tag"})
 public class PageDirective extends HttpServlet {
 
     /**
@@ -59,7 +59,7 @@ public class PageDirective extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("page-directive.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("forward-tag.jsp");
         requestDispatcher.forward(request, response);
     }
 
