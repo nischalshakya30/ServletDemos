@@ -1,5 +1,17 @@
-## Servlet Basics 
-This project contains two servlet class one servlet is configured in web.xml and another servlet is configured using **@WebServlet** annotation which is available from Servlet API 3.0.
+## Scriptlet Tag 
+Used to write the java code inside the jsp.
+
+3 types of Scripting Element: 
+* Scriptlet Tag
+* Expression Tag
+* Declaration Tag
+
+| Scripting Element | Description | Example |
+| ----------------- | ----------- | ------- |
+| Scriptlet tag     | execute the java code in  jsp | ```<% java source code %>```| 
+| Expression tag    | used to print values of variables or methods | ```<%= statement %>```|
+| Declaration tag   | used to declare fields or methods | ```<%! statement %>```| 
+
 
 ### Prerequisite
 * Java 8 or higher 
