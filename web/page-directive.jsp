@@ -1,9 +1,3 @@
-<%-- 
-    Document   : page-directive
-    Created on : Sep 28, 2020, 7:43:17 AM
-    Author     : msii
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.Date"%>
 <!DOCTYPE html>
 <%@include file="fragemnt/header.jsp"%> 
