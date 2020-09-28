@@ -10,7 +10,7 @@ Used to write the java code inside the jsp.
 | ----------------- | ----------- | ------- |
 | Scriptlet tag     | execute the java code in  jsp | ```<% java source code %>```| 
 | Expression tag    | used to print values of variables or methods | ```<%= statement %>```|
-| Declaration tag   | used to declare fields or methods | ```<%! statement %>```| 
+| Declaration tag   | used to declare fields or methods | ```<%! field or method declaration %>```| 
 
 
 ### Prerequisite
