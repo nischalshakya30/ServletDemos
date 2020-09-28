@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="assets/css/style.css"/>
-    <title>JSP Page</title>
+    <title>Implicit Objects</title>
 </head>
 <body>
 <div class="container">
@@ -23,10 +23,10 @@
                 <label for="numberTwo">Second Number:</label>
             </div>
             <div class="col-75">
-                <input type="text" name="numberOne" id="numberTwo" placeholder="Enter second number" required/>
+                <input type="text" name="numberTwo" id="numberTwo" placeholder="Enter second number" required/>
             </div>
         </div>
-        
+
         <div class="row">
             <button type="submit">Get Result</button>
         </div>
