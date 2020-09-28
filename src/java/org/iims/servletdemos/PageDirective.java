@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author msii
  */
-@WebServlet(name = "Add", urlPatterns = {"/add"})
-public class Add extends HttpServlet {
+@WebServlet(name = "PageDirective", urlPatterns = {"/page-directive"})
+public class PageDirective extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +38,10 @@ public class Add extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Add</title>");            
+            out.println("<title>Servlet PageDirective</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Add at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet PageDirective at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -59,7 +59,7 @@ public class Add extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("add.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("page-directive.jsp");
         requestDispatcher.forward(request, response);
     }
 
@@ -74,14 +74,7 @@ public class Add extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int numberOne = Integer.parseInt(request.getParameter("numberOne"));
-        int numberTwo = Integer.parseInt(request.getParameter("numberTwo"));
-        int result = numberOne + numberTwo;
-        request.setAttribute("sum", result);
-        
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("result.jsp");
-        requestDispatcher.include(request, response);
-        
+        processRequest(request, response);
     }
 
     /**
