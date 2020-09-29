@@ -30,5 +30,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javax.servlet-api-4.0.1" level="project" />
+    <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-6.0.6" level="project" />
   </component>
 </module>
