@@ -39,6 +39,8 @@ MVC pattern stands for Model-View-Controller. It is used to seperate application
 
 * Open the IDE
 
+* Import the servlet_demos.sql to MySQL server. 
+
 * Go the File / Open the project 
 
 * Setup up the apache tomcat server 
