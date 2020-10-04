@@ -2,16 +2,19 @@ package org.personal.servletdemos.model;
 
 // Model class which represents the database table
 public class Student {
-    
+
     private int id;
-    
+
     private String firstName;
-    
+
     private String lastName;
-    
+
     private String address;
-    
+
     private Long phoneNumber;
+
+    public Student() {
+    }
 
     public Student(String firstName, String lastName, String address, Long phoneNumber) {
         this.firstName = firstName;
@@ -19,7 +22,7 @@ public class Student {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
-    
+
     public int getId() {
         return id;
     }
@@ -59,6 +62,16 @@ public class Student {
     public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Student{"
+                + "id=" + id
+                + ", firstName='" + firstName + '\''
+                + ", lastName='" + lastName + '\''
+                + ", address='" + address + '\''
+                + ", phoneNumber=" + phoneNumber
+                + '}';
+    }
+
 }
