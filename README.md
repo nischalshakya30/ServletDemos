@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-## JSP Action Tags
-Used to control the flow between pages and to use Java Bean.
-
-|JSP Action Tags | Description |
-|--------------- | ----------- |
-| jsp:forward | forwards the request and response to another resource | 
-| jsp:include | includes another resource |
-| jsp:useBean | creates or locates bean object | 
-| jsp:setProperty | sets the value of the property in bean object | 
-| jsp:getProperty | prints the value of property of the bean | 
-| jsp:plugin | embeds another components such as applet |
-| jsp:param | sets the parameter value. It is used in include and forward mostly |
-| jsp:fallback | can be used to print the message if plugin is working. It is used in jsp:plugin | 
-=======
 ## Servlet MVC
 MVC pattern stands for Model-View-Controller. It is used to seperate application's concern.
 
@@ -21,8 +6,6 @@ MVC pattern stands for Model-View-Controller. It is used to seperate application
 * Controller : Controller acts on both model and view. It controls the data flow into model object and updates the view whenever data changes. It keeps view and model seperate.
 
 ![MVC](images/MVC.png)
-
->>>>>>> bb21a9d12d14ec88558089645e3a95076c836cf9
 
 ### Prerequisite
 * Java 8 or higher 
