@@ -27,18 +27,18 @@ In order to consider java class as the java bean the java class should follow th
 ## jsp:set property syntax
 * set all the values of incoming request in the bean 
     ``` java
-        <jsp:setProperty name="bean" property="*"/>
+    <jsp:setProperty name="bean" property="*"/>
     ```
 
 * set value for incoming specific property
     ``` java 
-        <jsp:setProperty name="bean" property="userName"/>      
+    <jsp:setProperty name="bean" property="userName"/>      
     ```
 
 * set specific value in the property
     ``` java 
-        <jsp:setProperty name="bean" property="username" value="Chris">
-   ```
+    <jsp:setProperty name="bean" property="username" value="Chris">
+    ```
      
 ### Prerequisite
 * Java 8 or higher 
